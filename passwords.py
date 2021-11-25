@@ -52,13 +52,14 @@ class Password:
     def combine_randoms(self):
         secret_password = []
         counter = 0
-        while counter < 4:
+        while counter < 6:
             secret_password.append(self.special_character_option())
             secret_password.append(str(self.number_options()))
             secret_password.append(self.letter_options())
             counter += 1
-        final_password = "".join(secret_password)
-        return print(final_password)
+        # final_password = "".join(secret_password)
+        # I am going to find a place to do this outside the loop 
+        return print(secret_password)
             
 
         # return self.special_character_option() + self.letter_options() + str(self.number_options())
